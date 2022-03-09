@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'sofia-pro';
+  font-weight: 100;
+  font-style: normal;
+  src: url("assets/fonts/l.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Hurme';
+  font-weight: 100;
+  font-style: normal;
+  src: url("assets/fonts/hurme-geometric-bold.woff2") format("woff2");
+}
+h1 {
+  font-family: Hurme,Helvetica,Arial,Sans-Serif;
+}
+.App {
+  font-family: sofia-pro, sans-serif;
+  padding-top: 40px;
+}
+.content {
+  padding: 15px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

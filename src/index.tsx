@@ -8,7 +8,6 @@ import {getStore} from "./store";
 import {HomeActionTypes} from "./pages/home/homeReducer";
 import {Provider} from "react-redux";
 import {initializeIcons} from "@fluentui/react";
-import '@fluentui/react/dist/sass/Fabric.scss';
 
 // Initiliaze Fabric icons
 initializeIcons()

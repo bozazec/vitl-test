@@ -1,0 +1,53 @@
+.product {
+  min-width: 280px;
+  max-width: 300px;
+  border: 1px solid #dedede;
+  background-color: #ffd326;
+  min-height: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  img {
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .details {
+    padding: 5px 10px;
+
+    .name {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .nutrients {
+      padding: 10px;
+
+      .title {
+        font-size: 18px;
+      }
+
+      .nutrient {
+        font-size: 18px;
+        //padding-left: 10px;
+      }
+    }
+
+
+  }
+
+  .price {
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+}

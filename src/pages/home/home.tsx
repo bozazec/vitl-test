@@ -1,23 +1,46 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {useDispatch, useSelector} from "react-redux";
 import {IAppState} from "../../store";
-import {PrimaryButton} from "@fluentui/react";
+import {Spinner, SpinnerSize, useTheme} from "@fluentui/react";
 import {HomeActionTypes} from "./homeReducer";
+import homeService from "./homeService";
+import Product, {IProductProps} from "../../components/product/product";
+import './home.scss'
+import AddToCartModal from "../../components/addToCartModal/addToCartModal";
 
 const Home = () => {
 	const dispatch = useDispatch()
-	const home = useSelector((state: IAppState) => state.home)
-	console.log('home', home)
-	const updateRedux = () => {
-		dispatch({
-			type: HomeActionTypes.UPDATE_AVAILABLE,
-			payload: 'asdf'
-		})
-	}
-	return <div>
-		<div>Home</div>
-		<div><PrimaryButton text={'click'} onClick={updateRedux}/></div>
-	</div>
+	const theme = useTheme()
+	const products = useSelector((state: IAppState) => state.home.products)
+	const cartCandidate = useSelector((state: IAppState) => state.home.cartCandidate)
+
+	const [error, setError] = useState('')
+	const [loading, setLoading] = useState(false)
+
+	useEffect(() => {
+		setError('')
+		setLoading(true)
+		homeService.getItems()
+			.then(res => {
+				const {data} = res
+				data.config && dispatch({type: HomeActionTypes.SET_CONFIG, payload: data.config})
+				data.products && dispatch({type: HomeActionTypes.SET_PRODUCTS, payload: data.products})
+			})
+			.catch(e => {
+				setError(e.message)
+			})
+			.finally(() => setLoading(false))
+	}, [dispatch])
+	return <>
+		<h1>The one supplement for the one you</h1>
+		<div>Get your personalised daily multivitamin tailor-made for you in just 5 minutes.</div>
+		<div className={'products'}>
+			{products.map((p: IProductProps, i: number) => <Product key={i} {...p}/>)}
+			{error && <div style={{color: theme.palette.red}}>{error}</div>}
+		</div>
+		<div>{loading && <Spinner size={SpinnerSize.medium}/>}</div>
+		{cartCandidate && <AddToCartModal />}
+	</>
 }
 
 export default Home
