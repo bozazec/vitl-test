@@ -1,5 +1,8 @@
 # Vitl test app
 
+<img width="1737" alt="Screenshot 2022-03-10 at 13 40 15" src="https://user-images.githubusercontent.com/4983327/157663687-61a2b638-e3fd-43e3-b6ab-5dbcc87c12d7.png">
+
+
 ## What is it
 
 React progressive web app. It demonstrates features like:
@@ -22,6 +25,7 @@ React progressive web app. It demonstrates features like:
 - Redux
 - FluentUI
 - Workbox (Google's PWA service-worker tool) v5
+- react test library
 
 ## How to use it
 
