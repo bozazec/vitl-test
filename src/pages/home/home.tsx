@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {useDispatch, useSelector} from "react-redux";
 import {IAppState} from "../../store";
-import {Spinner, SpinnerSize, useTheme} from "@fluentui/react";
+import {Spinner, SpinnerSize, useTheme, Text} from "@fluentui/react";
 import {HomeActionTypes} from "./homeReducer";
 import homeService from "./homeService";
 import Product, {IProductProps} from "../../components/product/product";
@@ -32,8 +32,8 @@ const Home = () => {
 			.finally(() => setLoading(false))
 	}, [dispatch])
 	return <>
-		<h1>The one supplement for the one you</h1>
-		<div>Get your personalised daily multivitamin tailor-made for you in just 5 minutes.</div>
+		<Text variant={'xxLarge'}>The one supplement for the one you</Text>
+		<Text block variant={'medium'}>Get your personalised daily multivitamin tailor-made for you in just 5 minutes.</Text>
 		<div className={'products'}>
 			{products.map((p: IProductProps, i: number) => <Product key={i} {...p}/>)}
 			{error && <div style={{color: theme.palette.red}}>{error}</div>}

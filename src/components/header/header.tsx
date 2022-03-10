@@ -57,7 +57,7 @@ const Header = () => {
 	}
 
 	return <header className="header" style={{backgroundColor: theme.palette.themePrimary}}>
-		<img className={'logo'} src={logo} alt={'vitl'}/>
+		<img data-testid={'logo'} className={'logo'} src={logo} alt={'vitl'}/>
 		{/*Update button*/}
 		{update && <Icon iconName={'CloudDownload'} className={'update'} onClick={updateApp}/>}
 		{/*Cart button*/}
@@ -73,7 +73,7 @@ const Header = () => {
 				<div className={'cartHeader'}>
 					<div className={'name'}>Item</div>
 					<div className={'qty'}>Qty</div>
-					<div className={'price'}>$</div>
+					<div className={'price'}>Cost</div>
 				</div>
 
 				{/*Cart items*/}

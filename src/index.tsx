@@ -7,7 +7,8 @@ import * as serviceWorker from './serviceWorkerRegistration';
 import {getStore} from "./store";
 import {HomeActionTypes} from "./pages/home/homeReducer";
 import {Provider} from "react-redux";
-import {initializeIcons} from "@fluentui/react";
+import {initializeIcons, ThemeProvider} from "@fluentui/react";
+import {vitlTheme} from "./vitlTheme";
 
 // Initiliaze Fabric icons
 initializeIcons()
@@ -15,12 +16,14 @@ initializeIcons()
 export const store = getStore()
 
 ReactDOM.render(
-	<React.StrictMode>
+	(<React.StrictMode>
+		<ThemeProvider theme={vitlTheme}>
 		<Provider store={store}>
 			<App/>
 		</Provider>
-	</React.StrictMode>,
-	document.getElementById('root')
+			</ThemeProvider>
+	</React.StrictMode>),
+	document.getElementById('root') || document.createElement('div')
 );
 
 // If you want to start measuring performance in your app, pass a function
