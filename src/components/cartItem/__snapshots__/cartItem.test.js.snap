@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem Rendering 1`] = `
+<div>
+  <div
+    class="cartItem"
+  >
+    <div
+      class="name"
+    >
+      Vitamin D
+    </div>
+    <div
+      class="qty"
+      data-testid="qty"
+    >
+      <i
+        aria-hidden="true"
+        class="root-118"
+        data-icon-name="Remove"
+      >
+        
+      </i>
+      <span
+        data-testid="quantityTestId"
+      >
+        1
+      </span>
+      <i
+        aria-hidden="true"
+        class="root-121"
+        data-icon-name="Add"
+        data-testid="addItemButton"
+      >
+        
+      </i>
+    </div>
+    <div
+      class="price"
+    >
+      10.0
+       
+      GBP
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Header Snapshot with right 450 1`] = `
+<div>
+  <header
+    class="header"
+    style="background-color: rgb(0, 120, 212);"
+  >
+    <img
+      alt="vitl"
+      class="logo"
+      data-testid="logo"
+      src="logo.svg"
+    />
+    <i
+      aria-label="cart"
+      class="cart root-115"
+      data-icon-name="ShoppingCart"
+      data-testid="cartButton"
+      role="img"
+    >
+      
+    </i>
+    <div
+      class="badge"
+    >
+      3
+    </div>
+    <div>
+      <div
+        class="cartContainer "
+        data-testid="cartContainer"
+      >
+        <div
+          class="cartHeader"
+        >
+          <div
+            class="name"
+          >
+            Item
+          </div>
+          <div
+            class="qty"
+          >
+            Qty
+          </div>
+          <div
+            class="price"
+          >
+            Cost
+          </div>
+        </div>
+        <div
+          class="cartItem"
+        >
+          <div
+            class="name"
+          >
+            Vitamin D
+          </div>
+          <div
+            class="qty"
+            data-testid="qty"
+          >
+            <i
+              aria-hidden="true"
+              class="root-118"
+              data-icon-name="Remove"
+            >
+              
+            </i>
+            <span
+              data-testid="quantityTestId"
+            >
+              1
+            </span>
+            <i
+              aria-hidden="true"
+              class="root-121"
+              data-icon-name="Add"
+              data-testid="addItemButton"
+            >
+              
+            </i>
+          </div>
+          <div
+            class="price"
+          >
+            2.3
+             
+            GBP
+          </div>
+        </div>
+        <div
+          class="cartItem"
+        >
+          <div
+            class="name"
+          >
+            Vitamin C
+          </div>
+          <div
+            class="qty"
+            data-testid="qty"
+          >
+            <i
+              aria-hidden="true"
+              class="root-118"
+              data-icon-name="Remove"
+            >
+              
+            </i>
+            <span
+              data-testid="quantityTestId"
+            >
+              1
+            </span>
+            <i
+              aria-hidden="true"
+              class="root-121"
+              data-icon-name="Add"
+              data-testid="addItemButton"
+            >
+              
+            </i>
+          </div>
+          <div
+            class="price"
+          >
+            4.5
+             
+            GBP
+          </div>
+        </div>
+        <div
+          class="cartItem"
+        >
+          <div
+            class="name"
+          >
+            Vitamin A
+          </div>
+          <div
+            class="qty"
+            data-testid="qty"
+          >
+            <i
+              aria-hidden="true"
+              class="root-118"
+              data-icon-name="Remove"
+            >
+              
+            </i>
+            <span
+              data-testid="quantityTestId"
+            >
+              1
+            </span>
+            <i
+              aria-hidden="true"
+              class="root-121"
+              data-icon-name="Add"
+              data-testid="addItemButton"
+            >
+              
+            </i>
+          </div>
+          <div
+            class="price"
+          >
+            6.0
+             
+            GBP
+          </div>
+        </div>
+        <div
+          class="total"
+        >
+          <div
+            class="title"
+          >
+            Total
+          </div>
+          <div>
+            12.8
+             
+            GBP
+          </div>
+        </div>
+        <button
+          class="ms-Button ms-Button--primary root-122"
+          data-is-focusable="true"
+          type="button"
+        >
+          <span
+            class="ms-Button-flexContainer flexContainer-123"
+            data-automationid="splitbuttonprimary"
+          >
+            <span
+              class="ms-Button-textContainer textContainer-124"
+            >
+              <span
+                class="ms-Button-label label-126"
+                id="id__4"
+              >
+                Checkout
+              </span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+`;

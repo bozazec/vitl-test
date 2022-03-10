@@ -8,7 +8,7 @@ React progressive web app. It demonstrates features like:
 - Axios ajax
 - PWA manifest and service-worker
 - Semi-auto-update - user gets un update icon in header when update is available
-- FluentUI
+- Microsoft FluentUI framework
 - Theming - vitlTheme.ts is theme file where style can be changed
 - Responsive design
 

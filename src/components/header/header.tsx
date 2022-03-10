@@ -61,7 +61,7 @@ const Header = () => {
 		{/*Update button*/}
 		{update && <Icon iconName={'CloudDownload'} className={'update'} onClick={updateApp}/>}
 		{/*Cart button*/}
-		<Icon onClick={() => setShowCart(!showCart)} className={'cart'} iconName={'ShoppingCart'} ariaLabel={'cart'}/>
+		<Icon data-testid={'cartButton'} onClick={() => setShowCart(!showCart)} className={'cart'} iconName={'ShoppingCart'} ariaLabel={'cart'}/>
 
 		{/*Badge*/}
 		{Object.keys(cart).length > 0 ? <div className={'badge'} onClick={() => setShowCart(!showCart)}>{qty}</div> : null}
@@ -69,7 +69,7 @@ const Header = () => {
 
 		{Object.keys(cart).length > 0 ? <div>
 			{/*Cart header*/}
-			<div className={`cartContainer ${showCart ? 'open' : ''}`} style={{height: 'fit-content'}}>
+			<div data-testid={'cartContainer'} className={`cartContainer ${showCart ? 'open' : ''}`} style={{height: 'fit-content'}}>
 				<div className={'cartHeader'}>
 					<div className={'name'}>Item</div>
 					<div className={'qty'}>Qty</div>

@@ -40,7 +40,7 @@ const Product = (props: IProductProps) => {
 			<div className={'nutrients'}>
 				<div className={'title'}>Nutrients:</div>
 				{nutrients.map((n: INutrient) => <div key={n.id} className={'nutrient'}>
-					<div>{n.id} ({n.amount} {tolerableUpperLimits[n.id].unit})</div>
+					<div>{n.id} ({n.amount} {tolerableUpperLimits[n.id]?.unit})</div>
 				</div>)}
 			</div>
 

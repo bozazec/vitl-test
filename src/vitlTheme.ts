@@ -1,7 +1,7 @@
 import {createTheme} from "@fluentui/react";
 
 export const vitlTheme = createTheme({
-	defaultFontStyle: {fontFamily: 'sofia-pro', fontWeight: 'regular', fontSize: '14px'},
+	defaultFontStyle: {fontFamily: 'sofia-pro', fontWeight: '400', fontSize: '14px'},
 	fonts: {
 		small: {
 			fontSize: '14px',

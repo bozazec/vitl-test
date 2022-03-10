@@ -25,10 +25,10 @@ const CartItem = (props: ICartItemProps) => {
 	}
 	return <div className={'cartItem'}>
 		<div className={'name'}>{name}</div>
-		<div className={'qty'}>
+		<div data-testid={'qty'} className={'qty'}>
 			<Icon iconName={'Remove'} onClick={() => removeItem(name)}/>
-			{quantity}
-			<Icon iconName={'Add'} onClick={() => addItem(name)}/>
+			<span data-testid={'quantityTestId'}>{quantity}</span>
+			<Icon data-testid={'addItemButton'} iconName={'Add'} onClick={() => addItem(name)}/>
 		</div>
 		<div className={'price'}>{(price * quantity).toFixed(1)} {config.currency}</div>
 	</div>
