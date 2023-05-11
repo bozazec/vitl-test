@@ -1,4 +1,4 @@
-# Vitl test app
+# Vitl test app - interview challenge
 
 <img width="1737" alt="Screenshot 2022-03-10 at 13 40 15" src="https://user-images.githubusercontent.com/4983327/157663687-61a2b638-e3fd-43e3-b6ab-5dbcc87c12d7.png">
 
